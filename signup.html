@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/signup.css"/>
+</head>
+<body>
+    <form class="signup">
+        <h1 class="signup-title">Sign Up</h1>
+        <div id="cont">
+            <div class="half1">
+                <input type="text" class="signup-input" name="fullname" placeholder="Full Name"/>
+                <input type="email" class="signup-input" name="email" placeholder="Email"/>
+                <input type="number" class="signup-input" name="phonenumber" placeholder="Phone Number"/>
+                <div class="eli">
+                    Are you above 18? : Yes <input type="radio" name="yesno"> No <input type="radio" name="yesno">
+                </div>
+                    <select name="gender" class="gen" id="gender">
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="number" class="signup-input" name="aadharnumber" placeholder="Aadhar Number"/>
+                <input type="number" class="signup-input" name="pancardnumber" placeholder="Pan card Number"/>
+            </div>
+            <div class="half2">
+                <input type="text" class="signup-input" name="username" placeholder="Username"/>
+                <input type="password" class="signup-input" name="password" placeholder="Password"/>
+                <input type="password" class="signup-input" name="confirmpassword" placeholder="Confirm Password"/>
+                <input type="submit" value="Login" name="submit" class="login-button"/>
+            </div>
+        </div>
+        <p class="link">Already have an account? <a href="/login.html">LOGIN</a> Now</p>
+  </form>
+</body>
+</html>

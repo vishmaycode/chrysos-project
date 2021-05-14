@@ -1,0 +1,30 @@
+body{
+    background-color:  lightgreen;
+    padding: 1.5rem;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2rem;
+}
+
+.panelgrid{
+    padding: 1rem;
+    background-color:  darkseagreen;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.panelgrid img{
+    height: 4rem;
+}
+
+.intopanel{
+    border-right: 1px solid black;
+}
+
+.intopanel2{
+    padding-left: 2rem;
+}
+
