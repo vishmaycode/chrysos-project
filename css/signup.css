@@ -18,16 +18,22 @@ h1.signup-title {
 #cont{
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 .half1{
+    padding: 0rem;
+    margin: 0rem;
     padding-top: 3rem;
-    padding-left: 5rem;
     display: grid;
     grid-template-columns: auto;
 }
 
-.half2{padding-top: 3rem;
+.half2{
+    margin: 0rem;
+    padding: 0rem;
+    padding-top: 3rem;
     display: grid;
     grid-template-rows: 4rem 4rem 4rem 4rem;
 }
@@ -58,6 +64,7 @@ h1.signup-title {
     font-size: 1rem;
 }
 
+
 .login-button {
     color: #fff;
     background: #55a1ff;
@@ -84,4 +91,99 @@ p{
 .link a {
     color: #666;
     font-weight: bold;
+}
+
+/* 1800 and more */
+
+@media (max-width:5000px) and (min-width: 1800px) {
+    .signup {
+        width: 90rem;
+    }
+}
+
+
+/* 1080 and 650 */
+
+@media (max-width:1080px) and (min-width:650px) {
+  
+    h1.signup-title {
+        font-size: 1.8rem;
+    }
+    
+    #cont{
+        grid-template-columns: auto;
+    }
+    
+    .half1{
+        grid-template-columns: auto;
+        padding: 0rem;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .half2{
+        grid-template-columns: auto;
+        padding: 0rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .signup-input{
+        margin-bottom: 1.2rem;
+        height: 1.7rem;
+        width: 80%;
+    }
+
+    .gen{
+        width: 84%;
+    }
+    
+    .login-button {
+        width: 84%;
+    }
+    
+}
+
+/* 650 and less */
+
+@media (max-width:650px) {
+  
+    .signup {
+        padding: 1rem;
+    }
+    h1.signup-title {
+        font-size: 1.8rem;
+    }
+    
+    #cont{
+        grid-template-columns: auto;
+    }
+    
+    .half1{
+        grid-template-columns: auto;
+        padding: 0rem;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .half2{
+        grid-template-columns: auto;
+        padding: 0rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .signup-input{
+        margin-bottom: 1.2rem;
+        height: 1.7rem;
+        width: 90%;
+    }
+
+    .gen{
+        width: 96%;
+    }
+    
+    .login-button {
+        width: 96%;
+    }
 }
