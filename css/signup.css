@@ -65,7 +65,7 @@ h1.signup-title {
 }
 
 
-.login-button {
+.signup-button {
     color: #fff;
     background: #55a1ff;
     border: 0;
@@ -138,7 +138,7 @@ p{
         width: 84%;
     }
     
-    .login-button {
+    .signup-button {
         width: 84%;
     }
     
@@ -183,7 +183,7 @@ p{
         width: 96%;
     }
     
-    .login-button {
+    .signup-button {
         width: 96%;
     }
 }

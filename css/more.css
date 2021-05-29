@@ -28,3 +28,32 @@ body{
     padding-left: 2rem;
 }
 
+.back{
+    text-align: left;
+}
+
+.back img{
+    padding-left: 1rem;
+    height: 4rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+/* 590 and less */
+
+@media (max-width:590px) {
+  
+    h2{
+        font-size: 85%;
+    }
+
+    h3{
+        font-size: 85%;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+}
