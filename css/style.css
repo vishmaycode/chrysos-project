@@ -250,6 +250,10 @@ p {
   padding-top: 6rem;
 }
 
+.brown{
+  color: var(--text-color);
+}
+
 /* contect us about us section */
 
 #contect-about {
