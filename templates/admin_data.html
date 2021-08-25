@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN_DATA</title>
+    <style>
+        table,th,td{
+            
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>USER DETAILS</h2>
+    <table>
+        <tr>
+            <td>U_ID</td>
+            <td>FULL_NAME</td>
+            <td>EMAIL</td>
+            <td>P_NO</td>
+            <td>GENDER</td>
+            <td>U_NAME</td>
+            <td>U_PASSWORD</td>
+        </tr>
+        <tr>
+            {% for i in user %}
+            <td>{{i.U_ID}}</td>
+            <td>{{i.FU_NAME}}</td>
+            <td>{{i.EMAIL}}</td>
+            <td>{{i.P_NO}}</td>
+            <td>{{i.GENDER}}</td>
+            <td>{{i.U_NAME}}</td>
+            <td>{{i.U_PASSWORD}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>SENDING ECERTIFICATE TO MAILS LIST</h2>
+    <table>
+        <tr>
+            <td>E_ID</td>
+            <td>U_ID</td>
+            <td>E_NAME</td>
+        </tr>
+        <tr>
+            {% for i in mail %}
+            <td>{{i.E_ID}}</td>
+            <td>{{i.U_ID}}</td>
+            <td>{{i.EMAIL}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+
+
+
+    <h2>HOME DELIVERY OF GOLD ADDRESSES  LIST</h2>
+    
+    <table>
+        <tr>
+            <td>A_ID</td>
+            <td>U_ID</td>
+            <td>U_ADD</td>
+        </tr>
+        <tr>
+            {% for i in user_add %}
+            <td>{{i.A_ID}}</td>
+            <td>{{i.U_ID}}</td>
+            <td>{{i.U_ADD}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+    
+</body>
+</html>

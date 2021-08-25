@@ -1,0 +1,198 @@
+body
+{
+    background: url("/static/texture_dirty_gold.jpg") no-repeat center
+    center/cover;
+}
+
+
+.logo_image
+{
+    height: 50px;
+    width: 50px;
+}
+.top_navigation_bar
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.top_navigation_bar_item
+{
+    display: inline;
+
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.top_navigation_bar_item:hover
+{
+    background-color:darkmagenta;
+}
+.second_navigation_bar
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:gray;
+    
+}
+.second_navigation_bar_item
+{
+    display: inline;
+    font-size: 20px;
+    text-decoration: none;   
+    text-align: center;
+    padding: 14px 16px;
+    font-style: oblique;
+}
+.second_navigation_bar_item_home
+{
+    display: inline;
+    font-size: 20px;
+    text-decoration: none;   
+    text-align: center;
+    padding: 14px 16px;
+    font-style: oblique;
+    background-color:#04AA6D;
+}
+.second_navigation_bar_item:hover
+{
+    background-color:#04AA6D;
+}
+
+.home_icon
+{
+    height: 20px;
+    width: 20px;
+}
+.user_icon
+{
+    height: 20px;
+    width: 20px;
+}
+
+.buy_icon
+{
+
+    height: 20px;
+    width: 20px;
+}
+
+.sell_icon
+{
+
+    height: 20px;
+    width: 20px;
+}
+
+.e_cetificate_icon
+{
+    height: 20px;
+    width: 20px;
+}
+
+.delivery_icon
+{
+    height: 20px;
+    width: 20px;
+}
+
+.home_side_menu_box
+{
+    width: 200px;
+  padding: 10px;
+  border: 5px solid gray;
+  position: fixed;
+}
+.home_side_menu {
+    width: 200px;
+
+  }
+  
+  .home_side_menu a {
+      
+    background-color: #eee; 
+    color: black; 
+    display: block; 
+    padding: 12px; 
+    text-decoration: none; 
+  }
+  
+  .home_side_menu a:hover {
+    background-color: #ccc; 
+  }
+
+  .home_side_menu_box_left_add
+  {
+      position: fixed;
+      margin-top: 220px;
+      width:220px;
+      height: 220px;
+  }
+.home_left_add
+{
+    width: 230px;
+    height: 230px;
+}
+  .info_first_para
+  {
+      margin-left: 240px;
+      font-size: 20px;
+
+  }
+  .info_first_para_header
+  {
+      text-align: center;
+  }
+  .first_para_bottom_gif
+  {
+    margin-left: 250px;
+    margin-top: 20px;
+    width:980px;
+    height: 220px;
+  }
+  .home_bottom_para
+  {
+      width: 1000px;
+      height: 270px;;
+
+  }
+  .second_para
+  {
+      
+      font-size:20px ;
+      margin-top: 80px;
+      margin-left: 250px;
+  }
+  .second_para_header
+  {
+      text-align: center;
+  }
+.Graphs
+{
+    margin-top: 80px;
+    margin-left: 250px;
+}
+.Graph_header
+{
+    text-align: center;
+}
+.Graph_1
+{
+    width: 1100px;
+
+}
+.Graph_2
+{
+    width: 400px;
+    height: 325px;
+}
+.Graph_3
+{
+   width: 600px;
+   height: 350px; 
+}

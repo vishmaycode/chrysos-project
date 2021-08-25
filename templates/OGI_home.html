@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrysos</title>
+    <link rel="shortcut icon" type="image" href="{{ url_for('static',filename='icon.png')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='OGI_home.css')}}">
+</head>
+<body>
+    <p id="demo"></p>
+    <div >
+        <ul class="top_navigation_bar">
+            <li class="top_navigation_bar_item"><a href="/home"><img class="logo_image" src="{{url_for('static',filename='OLG-logo.jpeg')}}"></a></li>
+            <li class="top_navigation_bar_item">{{session.username}} <!-- place to insert username --></li>
+            <li style="float: right; padding: 0.9rem;"><a style="background-color: grey; border-radius: 0.3rem; padding: 0.3rem; color: white; text-decoration: none;" href="/logout">LOGOUT</a></li>
+            <!-- THIS is button to bring you to Login page-->        
+        </ul>
+        
+        <hr style="width: 80%;">
+        <ul class="second_navigation_bar">
+            <li class="second_navigation_bar_item_home"><a href="/home" style="text-decoration: none;  color: white;">HOME <img class="home_icon" src="{{ url_for('static',filename='home.png')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/sell" style="text-decoration: none;  color: white;">SELL <img class="sell_icon" src="{{url_for('static',filename='sell.png')}}"></a></li>
+           <li class="second_navigation_bar_item"><a href="/buy" style="text-decoration: none; color: white;">BUY <img class="buy_icon" src="{{url_for('static',filename='buy_icon.jpeg')}}"></a></li>
+           <li class="second_navigation_bar_item"><a href="/certificate" style="text-decoration: none; color: white;">E-CERTIFICATE <img class="e_cetificate_icon" src="{{url_for('static',filename='e_certificate.jpeg')}}"></a></li>
+           <li class="second_navigation_bar_item"><a href="/HD" style="text-decoration: none; color: white;">HOME DELIVERY <img class="delivery_icon" src="{{url_for('static',filename='home_delivery.webp')}}"></a></li>
+           <li class="second_navigation_bar_item"><a href="/UP" style="text-decoration: none; color:white;">USER PROFILE <img class="user_icon" src="{{ url_for('static',filename='user_icon.jpeg')}}"></a></li>
+
+        </ul>
+    </div>
+
+    <hr style="width: 80%;">
+
+    <div class="home_side_menu_box">
+    <div class="home_side_menu">
+        <a href="#INFO">INFO</a>
+        <a href="#DIGITAL_GOLD">DIGITAL GOLD</a>
+        <a href="#graphs">GRAPHS</a>
+    </div>
+    </div>
+
+    <div class="home_side_menu_box_left_add">
+        <img class="home_left_add" src="{{url_for('static',filename='home_left_add.gif')}}">
+    </div>
+
+    <div class="info_first_para" id="INFO">
+        <h3 class="info_first_para_header"><u>What is Gold Investemnt </u></h3>
+        <p>Gold is the most popular as an investment.Investors generally buy gold as a way of diversifying risk, especially through the use of futures contracts and derivatives. The gold market is subject to speculation and volatility as are other markets. Compared to other precious metals used for investment, gold has been the most effective safe haven across a number of countries.</p>
+    </div>
+    <div class="first_para_bottom_gif">
+        <img class="home_bottom_para" src="{{url_for('static',filename='home_bottom_para.gif')}}">
+    </div>
+
+    
+    <div class="second_para" id="DIGITAL_GOLD">
+    <h3 class="second_para_header"><u>DIGITAL GOLD</h3></u>
+    <p>
+        An alternative to physical gold is digital gold. In India, digital gold can be bought from multiple apps and websites. However, it is offered only by certain companies, namely, Augmont Limited, a joint venture between state-owned Metals and Minerals Trading Corporation of India (MMTC), Produits Artistiques Métaux Précieux, Switzerland (PAMP) and SafeGold brand of Digital Gold India Pvt. Ltd.<br><br>
+        Investing in digital gold is considered to be a cost-effective and efficient way of investing in gold. Each unit of digital gold is backed by 24K 99.9% purity gold. One can buy gold with an amount as low as INR 100. The purchase and sale happens online at market prices. Hence ensuring complete transparency in the transaction.<br><br>
+        To invest in gold doesn’t involve additional storage and carrying costs. Investors need not worry about the safety of gold stored by the trading companies in a safe vault in the investor’s name. When an investor purchases a unit of digital gold online, the trading companies check the purity of the gold and place it in the vault in the investor’s name. Once the investor sells it, the trading company removes the gold from the vault. Investors can take physical delivery of gold upon redemption.<br>
+    </p> 
+    <h4><u>Benefits of investing in digital gold</u></h4> 
+    <ul>
+        <li><u><b>Invest small amounts:</u></b>Investors may invest small amounts of money in digital gold. There are no restrictions or minimum purchase limits. Hence one can consider digital gold for small investments. </li>
+        <li><u><b>Quality: </u></b>Investors will only possess 24 karat gold, and the quality will not be compromised. As a result, they do not have to be concerned with protection or purity.</li>
+        <li><u><b>Redemption: </u></b>These can be quickly and easily redeemed. The redemptions can be in physical gold coins or bars. Also, one can cash out their investment without any hassle. One can easily buy and sell the units.</li>
+        <li><u><b>Loan against digital gold:</u></b> The investment can be used as collateral for loans.</li>
+        <li><u><b>Safety:</u></b> The digital gold assets are insured and securely deposited in a vault. As a result, the risk of robbery is eliminated. The responsibility of the gold lies with the seller.</li>
+        <li><u><b>Track investments:</u></b> Investors can easily track their investments through online platforms (apps or websites). Furthermore, they can easily assess their investment’s performance and gain better insights.</li>
+        <li><u><b>Portfolio diversification:</u></b> It is a good investment option for portfolio diversification and is also a good asset for hedging.</li>
+        <li><u><b>Real-time rates:</u></b> The digital platforms offer real-time gold rates. Therefore, the investor can take advantage of the price movements and make purchases.</li>
+    </ul>
+    </div>
+    <div class="Graphs" id="graphs">
+        <h3 class="Graph_header">GRAPHS </h3>
+        <img class="Graph_1" src="{{url_for('static',filename='Graph_1.jpeg')}}">
+        <img class="Graph_2" src="{{url_for('static',filename='Graph_2.gif')}}">
+        <img class="Graph_3" src="{{url_for('static',filename='Graph_3.png')}}">
+    </div>
+
+</body>
+</html>

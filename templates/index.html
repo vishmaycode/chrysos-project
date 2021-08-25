@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrysos</title>
+    <link rel="shortcut icon" type="image" href="{{url_for('static',filename='icon.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav id="navbar">
+        <div class="" id="logo">
+            <a href="#home">
+                <img src="{{url_for('static',filename='icon.png')}}" alt="name.com">
+            </a>
+        </div>
+
+        <ul>
+            <li class="item dis"><a href="#home">Home</a></li>
+            <li class="item dis"><a href="#service-home">Services</a></li>
+            <li class="item dis"><a href="#price-home">Price/Rate</a></li>
+            <li class="item dis"><a href="#contect-about">Contect Us</a></li>
+        </ul>
+        <ul id="log">
+            <li class="item in"><a href="/login">Log-in</a></li><!-- CHANGE NEEDS TO BE MADE HERE-->
+            <li class="item in"><a href="/signup">Sign-up</a></li><!-- CHANGE NEEDS TO BE MADE HERE-->
+        </ul>
+
+    </nav>
+    <section id="home">
+        <div class="g1item">
+            <br>
+            <h1 id="name" class="h-primary">Chrysos.com</h1>
+            <p id="subt">-comes from the Greek chrȳsós, meaning “gold”</p>
+            <h1 class="h-primary">Invest in the RIGHT thing</h1>
+            <br>
+            <p>-> 24k Pure Gold</p>
+            <p>-> Buy and sell anytime</p>
+            <p>-> Take physical Delivery</p>
+            <p>-> Use E-cirtificate as collatral</p>
+            <a href="#service-home"><button class="btn nodec">Know More</button></a>
+        </div>
+        <div class="g1item" id="home-img">
+            <img src="{{url_for('static',filename='home-image.png')}}" alt="error">
+        </div>
+    </section>
+
+    <section class="services-container" id="service-home">
+        <h1 class="h-primary center" id="ours">Our Services</h1>
+        <div id="services">
+            <div class="box boxleft">
+                <h2 class="h-secondary center">Buying</h2>
+                <img src="{{url_for('static',filename='buy.png')}}" alt="error">
+                <p class="inlinesp">Digital gold is a convenient and cost-effective way of purchasing gold online. Stored in 100% secure vaults and insured. Gold as an investment is respected throughout the world for its value and rich history. The reasons people tend to make a gold investment are also different, it can be viewed as an asset which helps creating wealth as well as used to control and hedge financial market risks and rising inflation. Being one of the most preferred asset class in India, investment in digital gold is considered to be one of the best performing asset and provide good returns in coming future. In keeping with India's transition to a digital economy, we have designed a range of digital plans for the Indian consumer. Purchase gold even in small fractions.</p>
+            </div>
+            <div class="box boxright">
+                <h2 class="h-secondary center">Selling</h2>
+                <img src="{{url_for('static',filename='sell.png')}}" alt="error">
+                <p class="inlinesp">It is not surprising that gold can be purchased digitally too, hence eliminating the risk of theft and other storage costs. Once an individual purchases gold online, the custodian safely places the gold in a secured vault. And it is sold, the exact quantity of gold is removed from the vault. Also, one need not worry about the purity of gold as the gold goes through numerous quality checks before it goes to the vault. However one cannot keep the gold for more than 5 years in his account he has to either sell it or get it delivered physically. Liquidate your digital gold and get your money tranferd into your bank account within 2 days.</p>
+            </div>
+            <div class="box boxleft">
+                <h2 class="h-secondary center">Delivery</h2>
+                <img src="{{url_for('static',filename='e-cert.png')}}" alt="error">
+                <p class="inlinesp">Investing in gold online doesn’t involve any additional storage or carrying costs. Also, one need not worry about making charges in case of buying gold jewellery. The biggest advantage is one need not to worry about the safety of the gold purchased. Moreover, the transaction happens at market prices; hence there is complete transparency during trading. So whenever you feel line you need to get the gold delivered convert your digital gold to phyical gold in the forms of coins or bars and get it deliverd to your door steps.</p>
+            </div>
+            <div class="box boxright">
+                <h2 class="h-secondary center">E-cirtificate</h2>
+                <img src="{{url_for('static',filename='delivery.png')}}" alt="error">   
+                <p class="inlinesp">Gold is an asset that carries a legacy, unlike other precious metals. It is more than a mere investment, as it holds high emotional and social value. Any auspicious occasion includes purchasing of gold. Investing in gold helps in financial diversification of an investment portfolio and helps in hedging inflation risk, currency risk, and market volatility.The digital gold investments are safely stored in a secured vault and are insured. Therefore, one doesn’t have to worry about theft or loss. The responsibility of digital gold lies with the seller.Investors can use their digital gold investments as collateral for loans with the help of the E-cirtificate provided by the company.</p>
+            </div>
+    </section>
+
+    <section id="price-home">
+        <h1 class="h-primary center" id="price">Price / Rate</h1>
+        <h2 class="h-secondary center">Price for a gram of Gold on <span id="pricedate">june 15 2021</span></h2>
+        <br>
+        <h2 class="h-secondary center" >24K -> INR <span id="24k">3012.00</span></h2>
+        <h2 class="h-secondary center" >22K -> INR <span id="22k">2915.00</span></h2>
+        <h2 class="h-secondary center" >21K -> INR <span id="21k">2782.50</span></h2>
+        <h2 class="h-secondary center" >18K -> INR <span id="18k">2385.00</span></h2>
+    </section>
+
+    <section id="contect-about">
+        <div id="contect-box" class="gitem">
+            <h1 class="h-primary">Contect Us</h1>
+            <div id="contect-grid">
+                <div>
+                    <h3>Write To Us</h3>
+                    <h4>writetous@chrysos.com</h4>
+                </div>
+                <div>
+                    <h3>Coustomer Care</h3>
+                    <h4>coustomercare@chrysos.com</h4>
+                    <h4>1800-123456</h4>
+                </div>
+            </div>
+        </div>
+        <div id="about-box" class="gitem">
+            <h1 class="h-primary">About Us</h1>
+            <div id="person">
+                <div>
+                    <img src="{{url_for('static',filename='vishmay.png')}}" alt="Not Found">
+                    <h3>Chairman</h3>
+                    <h4>Vishmay Karbotkar</h4>
+                </div>
+                <div>
+                    <img src="{{ url_for('static',filename='satyam.png')}}" alt="Not Found">
+                    <h3>Chief Executive Officer</h3>
+                    <h4>Satyam Mahale</h4>
+                </div>
+                <div>
+                    <img src="{{ url_for('static',filename='virendra.png')}}" alt="Not Found">
+                    <h3>Chief Operations Officer</h3>
+                    <h4>Virendra Salgaonkar</h4>
+                </div>
+                <div>
+                    <a href="/more" class="nodec">
+                        <img src="{{url_for('static',filename='next.png')}}" alt="Not Found">
+                        <h3>More</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.chrysos.com. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

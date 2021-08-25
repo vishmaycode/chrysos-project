@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24K GOLD</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='BUY_24k.css')}}">
+<body>
+    <div class="k_24_buy">
+        <h2>24K GOLD BUY </h2>
+        <form action="" method="POST">
+            <p>Enter The Amount:<input name="24kcash" type="number" id="k_24_in" >&nbsp;&nbsp;Amount of Gold you will get:<input name="24kweight" type="number" id="k_24_out"></p>
+                <input type="submit" value="BUY" class="btn">
+            </form> 
+    </div>
+    <br>
+    <br>
+<div class="k_24_choice">
+    <input type="button" value="CHECK VALUE" id="check_value" onclick=relod_page() class="btn">
+<br>
+<br>
+    <a href="/buy"><input type="button" value="CANCEL" class="btn" ></a>
+</div>
+<script src="{{ url_for('static',filename='jq1.js')}}"></script>
+<script src="{{url_for('static',filename='BUY_24k.js')}}"></script>
+</body>
+
+</html>
