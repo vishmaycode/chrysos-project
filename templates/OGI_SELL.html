@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,52 +9,54 @@
     <link rel="shortcut icon" type="image" href="{{ url_for('static',filename='icon.png')}}">
     <link rel="stylesheet" href="{{url_for('static',filename='OGI_SELL.css')}}">
 </head>
+
 <body>
-    <div >
+    <div>
         <ul class="top_navigation_bar">
             <li class="top_navigation_bar_item"><a href="#"><img class="logo_image" src="{{url_for('static',filename='OLG-logo.jpeg')}}"></a></li>
-            <li class="top_navigation_bar_item">{{session.username}} <!-- place to insert username --></li>
+            <li class="top_navigation_bar_item">{{session.username}} <!-- place to insert username -->
+            </li>
             <li style="float: right; padding: 0.9rem;"><a style="background-color: grey; border-radius: 0.3rem; padding: 0.3rem; color: white; text-decoration: none;" href="/logout">LOGOUT</a></li>
-            <!-- THIS is button to bring you to Login page-->        
+            <!-- THIS is button to bring you to Login page-->
         </ul>
-        
+
         <hr style="width: 80%;">
         <ul class="second_navigation_bar">
-            <li class="second_navigation_bar_item"><a href="/home" style="text-decoration: none;  color: white;">HOME <img class="home_icon" src="{{ url_for('static',filename='home.png')}}"></a></li>
             <li class="second_navigation_bar_item_sell"><a href="/sell" style="text-decoration: none;  color: white;">SELL <img class="sell_icon" src="{{url_for('static',filename='sell.png')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/buy" style="text-decoration: none; color: white;">BUY <img class="buy_icon" src="{{url_for('static',filename='buy_icon.jpeg')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/certificate" style="text-decoration: none; color: white;">E-CERTIFICATE <img class="e_cetificate_icon" src="{{url_for('static',filename='e_certificate.jpeg')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/HD" style="text-decoration: none; color: white;">HOME DELIVERY <img class="delivery_icon" src="{{url_for('static',filename='home_delivery.webp')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/UP" style="text-decoration: none; color:white;">USER PROFILE <img class="user_icon" src="{{ url_for('static',filename='user_icon.jpeg')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/buy" style="text-decoration: none; color: white;">BUY <img class="buy_icon" src="{{url_for('static',filename='buy_icon.jpeg')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/certificate" style="text-decoration: none; color: white;">E-CERTIFICATE <img class="e_cetificate_icon" src="{{url_for('static',filename='e_certificate.jpeg')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/HD" style="text-decoration: none; color: white;">HOME DELIVERY <img class="delivery_icon" src="{{url_for('static',filename='home_delivery.webp')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/UP" style="text-decoration: none; color:white;">USER PROFILE <img class="user_icon" src="{{ url_for('static',filename='user_icon.jpeg')}}"></a></li>
 
         </ul>
         <table>
-        <tr>
-            <td><b><u>INVESTMENT ID</u></b></td>
-            <td><b><u>GOLD TYPE</u></b></td>
-            <td><b><u>GOLD QUANTITY IN (gms)</u></b></td>
-            <td><b><u>USER ID</u></b></td>
-            <td><b><u>AMOUNT(Rs.)</u></b></td>
-            <td><b><u>PURCHASE DATE</u></b></td>
-        </tr>
+            <tr>
+                <td><b><u>INVESTMENT ID</u></b></td>
+                <td><b><u>GOLD TYPE</u></b></td>
+                <td><b><u>GOLD QUANTITY IN (gms)</u></b></td>
+                <td><b><u>USER ID</u></b></td>
+                <td><b><u>AMOUNT(Rs.)</u></b></td>
+                <td><b><u>PURCHASE DATE</u></b></td>
+            </tr>
 
 
             {%for i in shares %}
-        <tr>
-        <td>   {{ i.I_ID}}</td> 
-        <td>   {{ i.GTYPE}}</td>
-        <td>   {{ i.QUANTITY}}</td>
-        <td>{{ i.U_UID }}</td>
-        <td>{{ i.CASH }}</td>
-        <td>{{ i.DATE }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+            <tr>
+                <td> {{ i.I_ID}}</td>
+                <td> {{ i.GTYPE}}</td>
+                <td> {{ i.QUANTITY}}</td>
+                <td>{{ i.U_UID }}</td>
+                <td>{{ i.CASH }}</td>
+                <td>{{ i.DATE }}</td>
+            </tr>
+            {% endfor %}
+        </table>
 
-    <form action="" method="POST">
-        <p class="p-para">Enter the investment id you want to sell:<input style="font-size: 0.8rem; border: 0.1rem solid rgb(209, 209, 209); padding: 0.4rem; height: 1rem; width: 20%;" type="number" name="id"></p>
-        <input style="color: #fff; background: #55a1ff;margin: 1.5rem 35%; border: 0; outline: 0; width: 30%; height: 2.2rem; font-size: 1rem; text-align: center; cursor: pointer;" type="submit" value="SELL">
-    </form>
+        <form action="" method="POST">
+            <p class="p-para">Enter the investment id you want to sell:<input style="font-size: 0.8rem; border: 0.1rem solid rgb(209, 209, 209); padding: 0.4rem; height: 1rem; width: 20%;" type="number" name="id"></p>
+            <input style="color: #fff; background: #55a1ff;margin: 1.5rem 35%; border: 0; outline: 0; width: 30%; height: 2.2rem; font-size: 1rem; text-align: center; cursor: pointer;" type="submit" value="SELL">
+        </form>
     </div>
 </body>
+
 </html>

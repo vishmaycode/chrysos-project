@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,24 @@
     <link rel="shortcut icon" type="image" href="{{ url_for('static',filename='icon.png')}}">
     <link rel="stylesheet" href="{{url_for('static',filename='OGI_UP.css')}}">
 </head>
+
 <body>
-    <div >
+    <div>
         <ul class="top_navigation_bar">
             <li class="top_navigation_bar_item"><a href="#"><img class="logo_image" src="{{url_for('static',filename='OLG-logo.jpeg')}}"></a></li>
-            <li class="top_navigation_bar_item">{{session.username}} <!-- place to insert username --></li>
+            <li class="top_navigation_bar_item">{{session.username}} <!-- place to insert username -->
+            </li>
             <li style="float: right; padding: 0.9rem;"><a style="background-color: grey; border-radius: 0.3rem; padding: 0.3rem; color: white; text-decoration: none;" href="/logout">LOGOUT</a></li>
             <!-- THIS is button to bring you to Login page-->
         </ul>
-        
+
         <hr style="width: 80%;">
         <ul class="second_navigation_bar">
-            <li class="second_navigation_bar_item"><a href="/home" style="text-decoration: none;  color: white;">HOME <img class="home_icon" src="{{ url_for('static',filename='home.png')}}"></a></li>
             <li class="second_navigation_bar_item"><a href="/sell" style="text-decoration: none;  color: white;">SELL <img class="sell_icon" src="{{url_for('static',filename='sell.png')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/buy" style="text-decoration: none; color: white;">BUY <img class="buy_icon" src="{{url_for('static',filename='buy_icon.jpeg')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/certificate" style="text-decoration: none; color: white;">E-CERTIFICATE <img class="e_cetificate_icon" src="{{url_for('static',filename='e_certificate.jpeg')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/HD" style="text-decoration: none; color: white;">HOME DELIVERY <img class="delivery_icon" src="{{url_for('static',filename='home_delivery.webp')}}"></a></li>
-           <li class="second_navigation_bar_item_user_profile"><a href="/UP" style="text-decoration: none; color:white;">USER PROFILE <img class="user_icon" src="{{ url_for('static',filename='user_icon.jpeg')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/buy" style="text-decoration: none; color: white;">BUY <img class="buy_icon" src="{{url_for('static',filename='buy_icon.jpeg')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/certificate" style="text-decoration: none; color: white;">E-CERTIFICATE <img class="e_cetificate_icon" src="{{url_for('static',filename='e_certificate.jpeg')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/HD" style="text-decoration: none; color: white;">HOME DELIVERY <img class="delivery_icon" src="{{url_for('static',filename='home_delivery.webp')}}"></a></li>
+            <li class="second_navigation_bar_item_user_profile"><a href="/UP" style="text-decoration: none; color:white;">USER PROFILE <img class="user_icon" src="{{ url_for('static',filename='user_icon.jpeg')}}"></a></li>
 
         </ul>
     </div>
@@ -50,4 +52,5 @@
         {% endfor %}
     </div>
 </body>
+
 </html>

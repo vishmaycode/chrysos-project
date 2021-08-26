@@ -8,7 +8,7 @@ from datetime import date
 app=Flask(__name__)
 
 app.config['SECRET_KEY']="HARD TO GUESS"
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:////home/master/Desktop/project-x/db/database.db'
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:////home/master/Downloads/git-repos/my/chrysos/db/database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
 
 db=SQLAlchemy(app)
@@ -55,7 +55,7 @@ def login():
         r=""
         username=request.form['username']
         password=request.form['password']
-        con=sqlite3.connect("/home/master/Desktop/project-x/db/database.db")
+        con=sqlite3.connect("/home/master/Downloads/git-repos/my/chrysos/db/database.db")
         c=con.cursor()
         c.execute("SELECT * FROM user WHERE U_NAME='"+username+"' and U_PASSWORD='"+password+"'")
         r=c.fetchall()
@@ -64,7 +64,7 @@ def login():
                 session['id']=i[0]
                 session['loggedin']=True
                 session['username']=i[5]
-                return redirect(url_for("home"))
+                return redirect(url_for("UP"))
     return render_template("login.html")
 
 @app.route("/signup",methods=["GET","POST"])
@@ -78,7 +78,7 @@ def signup():
             gender=request.form['gender']
             username=request.form['username']
             password=request.form['password']
-            con=sqlite3.connect("/home/master/Desktop/project-x/db/database.db")
+            con=sqlite3.connect("/home/master/Downloads/git-repos/my/chrysos/db/database.db")
             c=con.cursor()
             c.execute("INSERT INTO user VALUES('"+r+"','"+fname+"','"+pno+"','"+email+"','"+gender+"','"+username+"','"+password+"')")
             con.commit()
@@ -91,9 +91,9 @@ def signup():
 def more():
     return render_template("more.html")
 
-@app.route("/home")
-def home():
-    return render_template("OGI_home.html")
+# @app.route("/home")
+# def home():
+#     return render_template("OGI_home.html")
     
 
 @app.route("/sell",methods=["GET","POST"])
@@ -103,7 +103,7 @@ def sell():
     if(request.method=='POST'):
         if(request.form['id']!=""):
             id=str(request.form['id'])
-            con=sqlite3.connect("/home/master/Desktop/project-x/db/database.db")
+            con=sqlite3.connect("/home/master/Downloads/git-repos/my/chrysos/db/database.db")
             c=con.cursor()
             c.execute("DELETE FROM investment WHERE I_ID='"+id+"'")
             con.commit()
@@ -123,7 +123,7 @@ def certificate():
     if(request.method=='POST'):
         if(request.form['usermail']!=""):
             mail=request.form['usermail']
-            con=sqlite3.connect("/home/master/Desktop/project-x/db/database.db")
+            con=sqlite3.connect("/home/master/Downloads/git-repos/my/chrysos/db/database.db")
             c=con.cursor()
             c.execute("INSERT INTO sent_mail VALUES('"+r+"','"+s+"','"+mail+"')")
             con.commit()
@@ -139,7 +139,7 @@ def HD():
     if(request.method=='POST'):
         if(request.form['address']!=""):
             addr=request.form['address']
-            con=sqlite3.connect("/home/master/Desktop/project-x/db/database.db")
+            con=sqlite3.connect("/home/master/Downloads/git-repos/my/chrysos/db/database.db")
             c=con.cursor()
             c.execute("INSERT INTO user_add VALUES('"+r+"','"+s+"','"+addr+"')")
             con.commit()
@@ -164,7 +164,7 @@ def k24():
             cash=request.form['24kcash']
             QUANTITY=request.form['24kweight']
             today=str(date.today())
-            con=sqlite3.connect("/home/master/Desktop/project-x/db/database.db")
+            con=sqlite3.connect("/home/master/Downloads/git-repos/my/chrysos/db/database.db")
             c=con.cursor()
             c.execute("INSERT INTO investment VALUES('"+I_ID+"','"+U_UID+"','"+GTYPE+"','"+QUANTITY+"','"+cash+"','"+today+"')")
             con.commit()
@@ -182,7 +182,7 @@ def k22():
             QUANTITY=request.form['22kweight']
             cash=request.form['22kcash']
             today=str(date.today())
-            con=sqlite3.connect("/home/master/Desktop/project-x/db/database.db")
+            con=sqlite3.connect("/home/master/Downloads/git-repos/my/chrysos/db/database.db")
             c=con.cursor()
             c.execute("INSERT INTO investment VALUES('"+I_ID+"','"+U_UID+"','"+GTYPE+"','"+QUANTITY+"','"+cash+"','"+today+"')")
             con.commit()
@@ -201,7 +201,7 @@ def k21():
             QUANTITY=request.form['21kweight']
             cash=request.form['21kcash']
             today=str(date.today())
-            con=sqlite3.connect("/home/master/Desktop/project-x/db/database.db")
+            con=sqlite3.connect("/home/master/Downloads/git-repos/my/chrysos/db/database.db")
             c=con.cursor()
             c.execute("INSERT INTO investment VALUES('"+I_ID+"','"+U_UID+"','"+GTYPE+"','"+QUANTITY+"','"+cash+"','"+today+"')")
             con.commit()
@@ -222,7 +222,7 @@ def k18():
             cash=request.form['18kcash']
             QUANTITY=request.form['18kweight']
             today=str(date.today())
-            con=sqlite3.connect("/home/master/Desktop/project-x/db/database.db")
+            con=sqlite3.connect("/home/master/Downloads/git-repos/my/chrysos/db/database.db")
             c=con.cursor()
             c.execute("INSERT INTO investment VALUES('"+I_ID+"','"+U_UID+"','"+GTYPE+"','"+QUANTITY+"','"+cash+"','"+today+"')")
             con.commit()

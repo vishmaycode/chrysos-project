@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,30 @@
     <link rel="shortcut icon" type="image" href="{{ url_for('static',filename='icon.png')}}">
     <link rel="stylesheet" href="{{ url_for('static',filename='OGI_BUY.css')}}">
 </head>
+
 <body>
-    <div >
+    <div>
         <ul class="top_navigation_bar">
-        <li class="top_navigation_bar_item"><a href="#"><img class="logo_image" src="{{url_for('static',filename='OLG-logo.jpeg')}}"></a></li>
-        <li class="top_navigation_bar_item">{{session.username}} <!-- place to insert username --></li>
-        <li style="float: right; padding: 0.9rem;"><a style="background-color: grey; border-radius: 0.3rem; padding: 0.3rem; color: white; text-decoration: none;" href="/logout">LOGOUT</a></li>
-        <!-- THIS is button to bring you to Login page-->        
-    </ul>
-        
-    <hr style="width: 80%;">
+            <li class="top_navigation_bar_item"><a href="#"><img class="logo_image" src="{{url_for('static',filename='OLG-logo.jpeg')}}"></a></li>
+            <li class="top_navigation_bar_item">{{session.username}} <!-- place to insert username -->
+            </li>
+            <li style="float: right; padding: 0.9rem;"><a style="background-color: grey; border-radius: 0.3rem; padding: 0.3rem; color: white; text-decoration: none;" href="/logout">LOGOUT</a></li>
+            <!-- THIS is button to bring you to Login page-->
+        </ul>
+
+        <hr style="width: 80%;">
         <ul class="second_navigation_bar">
-            <li class="second_navigation_bar_item"><a href="/home" style="text-decoration: none;  color: white;">HOME <img class="home_icon" src="{{ url_for('static',filename='home.png')}}"></a></li>
             <li class="second_navigation_bar_item"><a href="/sell" style="text-decoration: none;  color: white;">SELL <img class="sell_icon" src="{{url_for('static',filename='sell.png')}}"></a></li>
-           <li class="second_navigation_bar_item_buy"><a href="/buy" style="text-decoration: none; color: white;">BUY <img class="buy_icon" src="{{url_for('static',filename='buy_icon.jpeg')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/certificate" style="text-decoration: none; color: white;">E-CERTIFICATE <img class="e_cetificate_icon" src="{{url_for('static',filename='e_certificate.jpeg')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/HD" style="text-decoration: none; color: white;">HOME DELIVERY <img class="delivery_icon" src="{{url_for('static',filename='home_delivery.webp')}}"></a></li>
-           <li class="second_navigation_bar_item"><a href="/UP" style="text-decoration: none; color:white;">USER PROFILE <img class="user_icon" src="{{ url_for('static',filename='user_icon.jpeg')}}"></a></li>
+            <li class="second_navigation_bar_item_buy"><a href="/buy" style="text-decoration: none; color: white;">BUY <img class="buy_icon" src="{{url_for('static',filename='buy_icon.jpeg')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/certificate" style="text-decoration: none; color: white;">E-CERTIFICATE <img class="e_cetificate_icon" src="{{url_for('static',filename='e_certificate.jpeg')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/HD" style="text-decoration: none; color: white;">HOME DELIVERY <img class="delivery_icon" src="{{url_for('static',filename='home_delivery.webp')}}"></a></li>
+            <li class="second_navigation_bar_item"><a href="/UP" style="text-decoration: none; color:white;">USER PROFILE <img class="user_icon" src="{{ url_for('static',filename='user_icon.jpeg')}}"></a></li>
 
         </ul>
     </div>
-    
+
     <h3 style="text-align: center; ">SELECT THE TYPE OF GOLD YOU WANT TO INVEST IN</h3>
-    
+
     <hr width="100%">
 
     <div id="selection" class="selection">
@@ -44,30 +46,30 @@
                 <p>24k Gold is also called pure gold or 100 per cent gold. This means that all 24 parts in the gold are all pure gold without traces of any other metals. It is known to be 99.9 per cent pure and takes on a distinct bright yellow color.</p>
             </div>
             <div id="k24_investment">
-                <div id="k24_investment_weight" >
+                <div id="k24_investment_weight">
                     <a href="/24k"><button class="btn">BUY 24K GOLD</button></a>
                 </div>
             </div>
         </div>
-        <div id="22k_para" class="hide"><u><b>22K GOLD</b></u>  
-        <div class="k22_para_info">
-            <p>The 22 Karat gold is mostly used in making jewellery. In 22K gold, 22 parts of the metal are gold and rest two comprises of metals like silver, zinc, nickel, and other alloys. It is also known as 91.67 per cent pure gold. Mixing alloys makes the texture of gold harder and hence jewellery becomes durable.</p>
-        </div>
-        <div id="k22_investment">
-            
-            <div id="k22_investment_weight" >
-                <a href="/22k"><button class="btn">BUY 22K GOLD</button></a>
+        <div id="22k_para" class="hide"><u><b>22K GOLD</b></u>
+            <div class="k22_para_info">
+                <p>The 22 Karat gold is mostly used in making jewellery. In 22K gold, 22 parts of the metal are gold and rest two comprises of metals like silver, zinc, nickel, and other alloys. It is also known as 91.67 per cent pure gold. Mixing alloys makes the texture of gold harder and hence jewellery becomes durable.</p>
+            </div>
+            <div id="k22_investment">
+
+                <div id="k22_investment_weight">
+                    <a href="/22k"><button class="btn">BUY 22K GOLD</button></a>
+
+                </div>
 
             </div>
-            
         </div>
-    </div>
         <div id="21k_para" class="hide"> <u><b>21K GOLD</b></u>
             <div class="k21_para_info">
                 <p>21K gold contains one or more alloys. These are metals such as copper, silver, or palladium that are amalgamated with pure gold. The use of copper gives a reddish tint to the gold; jewelry makers can use other metals to create rare blue or purple gold.</p>
             </div>
             <div id="k21_investment">
-                <div id="k21_investment_weight" >
+                <div id="k21_investment_weight">
                     <a href="/21k"><button class="btn">BUY 21K GOLD</button></a>
 
                 </div>
@@ -82,14 +84,15 @@
                     <a href="/18k"><button class="btn">BUY 18K GOLD</button></a>
 
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
 
- 
 
-    <script  src="{{ url_for('static',filename='jq1.js')}}"></script>
-    <script   src="{{url_for('static',filename='OGI_BUY.js')}}"></script>
+
+    <script src="{{ url_for('static',filename='jq1.js')}}"></script>
+    <script src="{{url_for('static',filename='OGI_BUY.js')}}"></script>
 
 </body>
+
 </html>
