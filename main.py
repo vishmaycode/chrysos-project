@@ -91,10 +91,6 @@ def signup():
 def more():
     return render_template("more.html")
 
-# @app.route("/home")
-# def home():
-#     return render_template("OGI_home.html")
-    
 
 @app.route("/sell",methods=["GET","POST"])
 def sell():

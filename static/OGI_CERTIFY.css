@@ -1,143 +1,38 @@
-body
-{
-    background: url("/static/texture_dirty_gold.jpg") no-repeat center
-    center/cover;
-}
-
-
-.logo_image
-{
-    height: 50px;
-    width: 50px;
-}
-.top_navigation_bar
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-.top_navigation_bar_item
-{
-    display: inline;
-
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.top_navigation_bar_item:hover
-{
-    background-color:darkmagenta;
-}
-.second_navigation_bar
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:gray;
-    
-}
-.second_navigation_bar_item
-{
-    display: inline;
-    font-size: 20px;
-    text-decoration: none;   
-    text-align: center;
-    padding: 14px 16px;
-    font-style: oblique;
-}
-.second_navigation_bar_item_certificate
-{
-    display: inline;
-    font-size: 20px;
-    text-decoration: none;   
-    text-align: center;
-    padding: 14px 16px;
-    font-style: oblique;
-    background-color:#04AA6D;
-}
-.second_navigation_bar_item:hover
-{
-    background-color:#04AA6D;
-}
-
-.home_icon
-{
-    height: 20px;
-    width: 20px;
-}
-.user_icon
-{
-    height: 20px;
-    width: 20px;
-}
-
-.buy_icon
-{
-
-    height: 20px;
-    width: 20px;
-}
-
-.sell_icon
-{
-
-    height: 20px;
-    width: 20px;
-}
-
-.e_cetificate_icon
-{
-    height: 20px;
-    width: 20px;
-}
-
-.delivery_icon
-{
-    height: 20px;
-    width: 20px;
-}
-
-.Note
-{
-    background-color: yellow ;
+.Note {
+    background-color: yellow;
     height: 250px;
     width: 1340px;
     border: 5px solid;
     font-size: 20px;
     text-align: center;
 }
-.Note_header
-{
+
+.Note_header {
     color: red;
     text-decoration: underline;
 }
-.mail_for_certificate
-{
+
+.mail_for_certificate {
     font-size: 20px;
     text-align: center;
 }
+
 .input_mail_for_certificate {
-   
     padding: 10px 20px;
     width: 20%;
-   border-color:red;
+    border-color: red;
+}
 
-  }
-  .input_mail_for_certificate:focus
-  {
-      background: silver;
-  }
-.submit_button
-{
+.input_mail_for_certificate:focus {
+    background: silver;
+}
+
+.submit_button {
     font-size: 20px;
     text-align: center;
 }
-.submit_button_real
-{
+
+.submit_button_real {
     padding: 10px 30px;
     background-color: lightgreen;
 }
