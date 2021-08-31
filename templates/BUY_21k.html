@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUY 21K GOLD</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='BUY_21k.css')}}">
-
+    <link rel="stylesheet" href="{{url_for('static',filename='buy.css')}}">
 </head>
+
 <body>
-    <div class="k_21_buy">
+    <div class="buy">
         <h2>21K GOLD BUY </h2>
         <form action="" method="POST">
-            <p>Enter The Amount:<input name="21kcash" type="number" id="k_21_in" >&nbsp;&nbsp;Amount of Gold you will get:<input name="21kweight" type="number" id="k_21_out"></p>
-                <input type="submit" value="BUY" class="btn">
-            </form> 
+            <p>Enter The Amount :
+                <input name="21kcash" type="number" id="k_21_in">
+                <br>
+                Amount of Gold you will get :
+                <input name="21kweight" type="number" id="k_21_out">
+            </p>
+            <input type="submit" value="BUY" class="btn">
+        </form>
     </div>
-    <br>
-    <br>
-<div class="k_21_choice">
-    <input type="button" value="CHECK VALUE" id="check_value" onclick=relod_page() class="btn">
-<br>
-<br>
-    <a href="/buy"><input type="button" value="CANCEL" class="btn" ></a>
-</div>
 
-<script src="{{ url_for('static',filename='jq1.js')}}"></script>
-<script src="{{url_for('static',filename='BUY_21k.js')}}"></script>
+    <div class="choice">
+        <input type="button" value="CHECK VALUE" id="check_value" onclick=relod_page() class="btn">
+        <a href="/buy"><input type="button" value="CANCEL" class="btn"></a>
+    </div>
+
+    <script src="{{ url_for('static',filename='jq1.js')}}"></script>
+    <script src="{{url_for('static',filename='BUY_21k.js')}}"></script>
 </body>
+
 </html>

@@ -29,39 +29,35 @@
         <hr style="width: 80%;">
         <ul class="second_navigation_bar">
             <li class="second_navigation_bar_item">
-                <a href="/sell" class="second_nav_href">SELL <img class="icon" src="{{url_for('static',filename='sell.png')}}">
-                </a>
+                <a href="/sell" class="second_nav_href">SELL </a>
+                <img class="icon" src="{{url_for('static',filename='sell.png')}}">
             </li>
             <li class="second_navigation_bar_item">
-                <a href="/buy" class="second_nav_href">BUY <img class="icon" src="{{url_for('static',filename='buy_icon.jpeg')}}">
-                </a>
+                <a href="/buy" class="second_nav_href">BUY </a>
+                <img class="icon" src="{{url_for('static',filename='buy_icon.jpeg')}}">
             </li>
             <li class="second_navigation_bar_item" style="background-color: #04AA6D;">
-                <a href="/certificate" class="second_nav_href">E-CERTIFICATE <img class="icon" src="{{url_for('static',filename='e_certificate.jpeg')}}">
-                </a>
+                <a href="/certificate" class="second_nav_href">E-CERTIFICATE </a>
+                <img class="icon" src="{{url_for('static',filename='e_certificate.jpeg')}}">
             </li>
             <li class="second_navigation_bar_item">
-                <a href="/HD" class="second_nav_href">HOME DELIVERY <img class="icon" src="{{url_for('static',filename='home_delivery.webp')}}">
-                </a>
+                <a href="/HD" class="second_nav_href">HOME DELIVERY </a>
+                <img class="icon" src="{{url_for('static',filename='home_delivery.webp')}}">
             </li>
             <li class="second_navigation_bar_item">
-                <a href="/UP" class="second_nav_href">USER PROFILE <img class="icon" src="{{ url_for('static',filename='user_icon.jpeg')}}">
-                </a>
+                <a href="/UP" class="second_nav_href">USER PROFILE </a>
+                <img class="icon" src="{{ url_for('static',filename='user_icon.jpeg')}}">
             </li>
         </ul>
     </div>
 
-    <div class="Note">
-        <h2 class="Note_header">NOTE</h2>
-        <p>The use of this certificate will be as security while providing you loan .You make sure if you have this certificate you should have some gold in your resrves,if you don't have any(you have selled all your shares) then this is of no use.</p>
-        <p>Kindly provide your mail to us we so we can mail the cirtificate</p>
-    </div>
-
-
-    <div class="submit_button ">
+    <div class="mid_text">
         <form action="" method="POST">
-            <p>Enter your mail here:<input name="usermail" class="input_mail_for_certificate" id="input_mail_for_certificate" type="text"></p>
-            <input class="submit_button_real" id="submit_button_real" onclick="show_alert_box()" type="submit" value="SUBMIT">
+            <p>Kindly provide your mail to us we so we can mail the cirtificate.</p>
+            <p>Enter your mail here :
+                <input name="usermail" class="input_padding" id="input_mail_for_certificate" type="text">
+            </p>
+            <input class="btn" id="submit_button_real" onclick="show_alert_box()" type="submit" value="SUBMIT">
         </form>
     </div>
 

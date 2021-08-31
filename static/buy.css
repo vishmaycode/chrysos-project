@@ -1,20 +1,17 @@
-body
-{
-    background: url("/static/texture_dirty_gold.jpg") no-repeat center
-    center/cover;
+body {
+    background: url("/static/texture_dirty_gold.jpg") no-repeat center center/cover;
 }
 
-.k_18_buy
-{
+.buy {
     text-align: center;
     font-size: 20px;
 }
 
-.k_18_choice
-{
+.choice {
     text-align: center;
     font-size: 20px;
 }
+
 .btn {
     color: #fff;
     background: #55a1ff;
