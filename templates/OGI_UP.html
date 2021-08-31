@@ -26,49 +26,53 @@
             <!-- THIS is button to bring you to Login page-->
         </ul>
 
-        <hr style="width: 80%;">
+        <br>
         <ul class="second_navigation_bar">
+            <li class="second_navigation_bar_item" style="background-color: #04AA6D;">
+                <a href="/UP" class="second_nav_href">PROFILE </a>
+            </li>
             <li class="second_navigation_bar_item">
                 <a href="/sell" class="second_nav_href">SELL </a>
-                <img class="icon" src="{{url_for('static',filename='sell.png')}}">
             </li>
             <li class="second_navigation_bar_item">
                 <a href="/buy" class="second_nav_href">BUY</a>
-                <img class="icon" src="{{url_for('static',filename='buy_icon.jpeg')}}">
             </li>
             <li class="second_navigation_bar_item">
                 <a href="/certificate" class="second_nav_href">E-CERTIFICATE</a>
-                <img class="icon" src="{{url_for('static',filename='e_certificate.jpeg')}}">
             </li>
             <li class="second_navigation_bar_item">
                 <a href="/HD" class="second_nav_href">HOME DELIVERY </a>
-                <img class="icon" src="{{url_for('static',filename='home_delivery.webp')}}">
-            </li>
-            <li class="second_navigation_bar_item" style="background-color: #04AA6D;">
-                <a href="/UP" class="second_nav_href">USER PROFILE </a>
-                <img class="icon" src="{{ url_for('static',filename='user_icon.jpeg')}}">
             </li>
         </ul>
     </div>
 
-    <h2 class="s-title">
-        User BIO DATA:
-    </h2>
     <div style="margin: 1rem 2rem;">
         {% for i in details %}
-        <h3 style="font-size: 1.5rem; color: rgb(54, 54, 54); margin: 0rem; padding: 1rem;">NAME: <span style="float: right;">{{ i.FU_NAME }}</span></h3>
+        <h3 class="user_text">NAME:
+            <span style="float: right;">{{ i.FU_NAME }}</span>
+        </h3>
         <br>
-        <h3 style="font-size: 1.5rem; color: rgb(54, 54, 54); margin: 0rem; padding: 1rem;">EMAIL: <span style="float: right;">{{ i.EMAIL }}</span></h3>
+        <h3 class="user_text">EMAIL:
+            <span style="float: right;">{{ i.EMAIL }}</span>
+        </h3>
         <br>
-        <h3 style="font-size: 1.5rem; color: rgb(54, 54, 54); margin: 0rem; padding: 1rem;">PHONE_NUMBER: <span style="float: right;">{{ i.P_NO }}</span></h3>
+        <h3 class="user_text">PHONE_NUMBER:
+            <span style="float: right;">{{ i.P_NO }}</span>
+        </h3>
         <br>
-        <h3 style="font-size: 1.5rem; color: rgb(54, 54, 54); margin: 0rem; padding: 1rem;">GENDER: <span style="float: right;">{{ i.GENDER }}</span></h3>
+        <h3 class="user_text">GENDER:
+            <span style="float: right;">{{ i.GENDER }}</span>
+        </h3>
         <br>
-        <h3 style="font-size: 1.5rem; color: rgb(54, 54, 54); margin: 0rem; padding: 1rem;">USERID: <span style="float: right;">{{ i.U_NAME }}</span></h3>
+        <h3 class="user_text">USERID:
+            <span style="float: right;">{{ i.U_NAME }}</span>
+        </h3>
         <br>
         {% endfor %}
         {% for i in addr %}
-        <h3 style="font-size: 1.5rem; color: rgb(54, 54, 54); margin: 0rem; padding: 1rem;">USER_ADDRESS: <span style="float: right;">{{ i.U_ADD }}</span></h3>
+        <h3 class="user_text">USER_ADDRESS:
+            <span style="float: right;">{{ i.U_ADD }}</span>
+        </h3>
         {% endfor %}
     </div>
 </body>
