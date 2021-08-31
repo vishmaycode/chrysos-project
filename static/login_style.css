@@ -63,3 +63,110 @@ body {
     height: 20px;
     width: 20px;
 }
+
+/*  UP */
+
+.s-title {
+    color: rgb(126, 126, 126);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* BUY */
+
+.show {
+    text-align: center;
+    position: fixed;
+    visibility: unset;
+    margin-top: 20px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.selection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn {
+    color: #fff;
+    background: #55a1ff;
+    border: 0;
+    outline: 0;
+    width: 20%;
+    height: 2.9rem;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 0.8rem auto;
+}
+
+/* SELL */
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+.p-para {
+    color: #666;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* CERTIFY */
+
+.Note {
+    background-color: yellow;
+    height: 250px;
+    width: 1340px;
+    border: 5px solid;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Note_header {
+    color: red;
+    text-decoration: underline;
+}
+
+.mail_for_certificate {
+    font-size: 20px;
+    text-align: center;
+}
+
+.input_mail_for_certificate {
+    padding: 10px 20px;
+    width: 20%;
+    border-color: red;
+}
+
+.input_mail_for_certificate:focus {
+    background: silver;
+}
+
+.submit_button {
+    font-size: 20px;
+    text-align: center;
+}
+
+.submit_button_real {
+    padding: 10px 30px;
+    background-color: lightgreen;
+}
+
+/* HD */
+
+.p-para {
+    color: #666;
+    font-size: 1rem;
+    text-align: center;
+}
