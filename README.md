@@ -1,3 +1,3 @@
 # chrysos
 
-A Online Gold Investment (Demo) Website
+A Online Gold Investment (Demo Project) Website
